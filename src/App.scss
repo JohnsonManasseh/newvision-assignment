@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Josefin+Sans:wght@200;300;400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // background-color: #1b2c49;
+  // color: #fff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.navbarStyling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border-bottom: 1px solid rgb(122, 122, 122);
+}
+
+.timeline {
+  border-left: 1px solid #d95c5c;
+  position: relative;
+  list-style: none;
+}
+
+.timeline .timeline-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.timeline .timeline-item1-red {
+  position: relative;
+  cursor: pointer;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item1-red:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  // background-color: #d95c5c;
+  border: 1px solid #d95c5c;
+  background-color: white;
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+
+.timeline .timeline-item1-red:after {
+  // background-color: #d95c5c;
+  border: 1px solid #d95c5c;
+  background-color: #d95c5c;
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+.p-red {
+  color: #d95c5c;
+}
+
+.section-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.section-modal {
+  padding: 30px;
+  height: 200px;
+  width: 400px;
+  /* max-width: 480px; */
+  margin: 200px auto;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-button {
+  padding: 5px 45px;
+  outline: none;
+  border: none;
+  background-color: #d95c5c;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-size: 40px;
+  font-weight: 500;
+  &:hover {
+    background-color: #a34c4c;
+  }
+}
+.section-modal-close {
+  cursor: pointer;
+  position: relative;
+  top: -75px;
+  left: 129px;
+}
+.section-timeline-img {
+  height: 100px;
+  width: 120px;
+}
+.create-button {
+  padding-right: 190px;
+}
+.hamburger-icon {
+  position: absolute;
+  left: 20px;
+  font-size: 35px;
+  top: 19px;
+  cursor: pointer;
+}
+ul {
+  padding-left: 1rem;
+}
+.section-h3 {
+  color: #d95c5c;
+  font-weight: 700;
+}
+.timeline-h5 {
+  font-weight: 400;
+}
+.section-p {
+  line-height: 32px;
+  font-weight: 600;
+}
+.title {
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .create-button {
+    padding-right: 0px;
+  }
+  .section-p {
+    margin-top: 30px;
+  }
+}
